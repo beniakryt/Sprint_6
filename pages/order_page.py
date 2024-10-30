@@ -49,6 +49,6 @@ class OrderPage(BasePage):
         self.click_to_element(OrderPageLocators.CONFIRM_POPUP_BUTTON)
 
     @allure.step('Проверяем успешное оформление заказа')
-    def check_order_success(self):
+    def get_order_success(self):
         return self.get_text_from_element(OrderPageLocators.SUCCESS_MESSAGE)
 

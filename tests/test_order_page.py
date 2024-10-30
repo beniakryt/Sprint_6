@@ -25,6 +25,6 @@ class TestOrderPage:
 
         order_page.fill_order_form(name, last_name, address, phone, date)
 
-        success_message = order_page.check_order_success()
+        success_message = order_page.get_order_success()
         assert "Заказ оформлен" in success_message, "Ожидалось сообщение об успешном заказе"
 
